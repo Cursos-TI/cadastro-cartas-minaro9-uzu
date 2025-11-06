@@ -6,73 +6,28 @@
 
 int main() {
   // Área para definição das variáveis para armazenar as propriedades das cidades
-    // VARIAVEIS DA CARTA 1
-    char Estado1;
-    char Codigo1[4];
-    char NomeCidade1[20];
-    int População1;
-    float Area1;
-    float Pib1;
-    int PontosTuristicos1;
+  //carta1
+  char Estado1;
+  char Codigo1[4];
+  char NomeCidade1[30];
+  int Populacao1,PontosTuristicos1;
+  float Area1,Pib1;
 
-    // VARIAVEIS DA CARTA 2
-    char Estado2;
-    char Codigo2[4];
-    char NomeCidade2[20];
-    int População2;
-    float Area2;
-    float Pib2;
-    int PontosTuristicos2;
+  //carta2
+  char Estado2;
+  char Codigo2;
+  char NomeCidade2[30];
+  int Populacao2,PontosTuristicos2;
+  float Area2,Pib2;
+  // Área para entrada de dado
+  //leitura da carta 1
+  printf("===cadastro carta 1===\n");
 
-  // Área para entrada de dados
-  //leitura de dados da carta 1
-    printf("===cadastro carta 1===\n");
-    printf("estado (a-h):");
-    scanf("%c", &Estado1);
+  printf("Estado (A-h):");
+  scanf("%c", &Estado1);
 
-    printf("codigo da carta(ex:Ao1):");
-    scanf("%s", &Codigo1);
-
-    printf("nome da cidade1:");
-    scanf("%s", &NomeCidade1);
-
-    printf("população");
-    scanf("%d", &População1);
-
-    printf("Area (em km²): ");
-    scanf("%f", &Area1);
-
-    printf("PIB (em bilhoes de reais): ");
-    scanf("%f", &Pib1);
-
-    printf("Numero de Pontos Turisticos: ");
-    scanf("%d", &PontosTuristicos1);
-    
-    // leitura de dados da carta 2
-    printf("===cadastro carta 2===\n");
-    printf("estado (a-h):");
-    scanf("%c", &Estado2);
-
-    printf("codigo da carta(ex:Ao2):");
-    scanf("%s", &Codigo2);
-
-    printf("nome da cidade2:");
-    scanf("%s", &NomeCidade2);
-
-    printf("população");
-    scanf("%d", &População2);
-
-    printf("Area (em km²): ");
-    scanf("%f", &Area2);
-
-    printf("PIB (em bilhoes de reais): ");
-    scanf("%f", &Pib2);
-
-    printf("Numero de Pontos Turisticos: ");
-    scanf("%d", &PontosTuristicos2);
-
-
-    
+  printf("Codigo da Carta1 (EX:A01):");
+  scanf("%s", &Codigo1);
   // Área para exibição dos dados da cidade
 
 return 0;
