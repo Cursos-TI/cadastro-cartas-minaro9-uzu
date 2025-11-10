@@ -8,7 +8,7 @@ int main() {
   // Área para definição das variáveis para armazenar as propriedades das cidades
   //carta1
   char Estado1;
-  char Codigo1[4];
+  char Codigo1[9];
   char NomeCidade1[30];
   int Populacao1,PontosTuristicos1;
   float Area1,Pib1;
@@ -24,10 +24,15 @@ int main() {
   printf("===cadastro carta 1===\n");
 
   printf("Estado (A-h):");
-  scanf("%c", &Estado1);
+  scanf(" %c", &Estado1);
 
-  printf("Codigo da Carta1 (EX:A01):");
-  scanf("%s", &Codigo1);
+  printf("Codigo da Carta1:");
+  scanf("%9s", Codigo1);
+  
+  printf("NomeCidade1:");
+  scanf("%s", &NomeCidade1);
+
+
   // Área para exibição dos dados da cidade
 
 return 0;
