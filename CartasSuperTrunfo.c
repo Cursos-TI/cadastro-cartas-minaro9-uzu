@@ -8,15 +8,15 @@ int main() {
   // Área para definição das variáveis para armazenar as propriedades das cidades
   //carta1
   char Estado1;
-  char CodigoCarta[4];
-  char NomeCidade1[30];
+  char Codigo1[4];
+  char Cidade1[30];
   int Populacao1,PontosTuristicos1;
   float Area1,Pib1;
 
   //carta2
   char Estado2;
-  char CodigoCarta2;
-  char NomeCidade2[30];
+  char Codigo2[4];
+  char Cidade2[30];
   int Populacao2,PontosTuristicos2;
   float Area2,Pib2;
   // Área para entrada de dado
@@ -27,10 +27,10 @@ int main() {
   scanf(" %c", &Estado1);
 
   printf("Codigo da Carta1:");
-  scanf(" %4s", CodigoCarta);
+  scanf(" %4s", Codigo1);
   
   printf("NomeCidade1:");
-  scanf("%30s", NomeCidade1);
+  scanf("%30s", Cidade1);
 
   printf("Populacao1:");
   scanf("%d", &Populacao1);
@@ -55,10 +55,10 @@ int main() {
     scanf(" %c", &Estado2);
 
     printf("Codigo da carta 2: ");
-    scanf(" %4s", CodigoCarta2);
+    scanf(" %4s", Codigo2);
 
     printf("NomeCidade2: ");
-    scanf("%30s", NomeCidade2);
+    scanf(" %30s", Cidade2);
 
     printf("População2: ");
     scanf("%d", &Populacao2);
@@ -73,11 +73,30 @@ int main() {
     scanf("%d", &PontosTuristicos2);
     
 
+// Área para exibição dos dados da cidade
+       printf("\n=== CARTAS CADASTRADAS ===\n\n");
 
+// Mostrar carta 1
+    printf("Carta 1:\n");
+    printf("Estado: %c\n", Estado1);
+    printf("Codigo: %s\n", Codigo1);
+    printf("Nome da Cidade: %s\n", Cidade1);
+    printf("População: %d\n", Populacao1);
+    printf("Área: %.2f km²\n", Area1);
+    printf("PIB: %.2f bilhões de reais\n", Pib1);
+    printf("Número de Pontos Turísticos: %d\n\n", PontosTuristicos1);
 
+// Mostrar carta 2
+    printf("Carta 2:\n");
+    printf("Estado: %c\n", Estado2);
+    printf("Codigo: %s\n", Codigo2);
+    printf("Nome da Cidade: %s\n", Cidade2);
+    printf("População: %d\n", Populacao2);
+    printf("Área: %.2f km²\n", Area2);
+    printf("PIB: %.2f bilhões de reais\n", Pib2);
+    printf("Número de Pontos Turísticos: %d\n", PontosTuristicos2);
+ 
 
-
-  // Área para exibição dos dados da cidade
 
 return 0;
 } 
