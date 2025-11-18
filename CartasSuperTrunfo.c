@@ -8,10 +8,12 @@ int main() {
   // Área para definição das variáveis para armazenar as propriedades das cidades
   //carta1
   char Estado1;
-  char Codigo1[4];
+  char Codigo1[8];
   char Cidade1[30];
   int Populacao1,PontosTuristicos1;
   float Area1,Pib1;
+  float Densidade1;
+  float Percap1;
 
   //carta2
   char Estado2;
@@ -19,6 +21,8 @@ int main() {
   char Cidade2[30];
   int Populacao2,PontosTuristicos2;
   float Area2,Pib2;
+  float Densidade2;
+  float Percap2;
   // Área para entrada de dado
   //leitura da carta 1
   printf("===cadastro carta 1===\n");
@@ -27,13 +31,13 @@ int main() {
   scanf(" %c", &Estado1);
 
   printf("Codigo da Carta1:");
-  scanf(" %4s", Codigo1);
+  scanf("%s", Codigo1);
   
   printf("NomeCidade1:");
   scanf("%30s", Cidade1);
 
   printf("Populacao1:");
-  scanf("%d", &Populacao1);
+  scanf("%11d", &Populacao1);
 
   printf("Area (Km2):");
   scanf("%f", &Area1);
@@ -43,6 +47,10 @@ int main() {
 
   printf("Número de Pontos Turísticos1: ");
   scanf("%d", &PontosTuristicos1);
+
+  // Cálculos carta 1
+    Densidade1 = Populacao1 / Area1;
+    Percap1 = Pib1 / Populacao1;
 
   printf("\n");
 
@@ -61,16 +69,20 @@ int main() {
     scanf(" %30s", Cidade2);
 
     printf("População2: ");
-    scanf("%d", &Populacao2);
+    scanf("%11d", &Populacao2);
 
     printf("Area2 (km²): ");
     scanf("%f", &Area2);
 
     printf("Pib2 (em bilhões de reais): ");
-    scanf("%f", &Pib2);
+    scanf("%af", &Pib2);
 
     printf("Número de Pontos Turísticos2: ");
     scanf("%d", &PontosTuristicos2);
+
+     // Cálculos carta 2
+    Densidade2 = Populacao2 / Area2;
+    Percap2 = Pib2 / Populacao2;
     
 
 // Área para exibição dos dados da cidade
@@ -85,6 +97,8 @@ int main() {
     printf("Área: %.2f km²\n", Area1);
     printf("PIB: %.2f bilhões de reais\n", Pib1);
     printf("Número de Pontos Turísticos: %d\n\n", PontosTuristicos1);
+    printf("Densidade Populacional: %.2f hab/km²\n", Densidade1);
+    printf("PIB per Capita: %.2f reais\n", Percap1);
 
 // Mostrar carta 2
     printf("Carta 2:\n");
@@ -95,6 +109,8 @@ int main() {
     printf("Área: %.2f km²\n", Area2);
     printf("PIB: %.2f bilhões de reais\n", Pib2);
     printf("Número de Pontos Turísticos: %d\n", PontosTuristicos2);
+    printf("Densidade Populacional: %.2f hab/km²\n", Densidade2);
+    printf("PIB per Capita: %.2f reais\n", Percap2);
  
 
 
