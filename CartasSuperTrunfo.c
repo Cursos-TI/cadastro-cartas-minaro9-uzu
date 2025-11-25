@@ -36,7 +36,7 @@ int main() {
     printf("Numero de Pontos Turisticos: ");
     scanf("%d", &pontos1);
 
-    // Cálculos carta 1 (proteções contra divisão por zero)
+    // Cálculos carta 1 
     if (area1 == 0.0f) {
         dens1 = 0.0f;
     } else {
